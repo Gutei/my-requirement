@@ -1,3 +1,6 @@
+# IDE Setting
+.idea/*
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json

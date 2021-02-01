@@ -1,0 +1,17 @@
+version: "3.9"  # optional since v1.27.0
+
+services:
+  redis:
+    container_name: redis
+    image: redis:6
+    ports:
+      - 6379:6379
+  db:
+    container_name: postgres
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=kamikaze
+      - POSTGRES_PASSWORD=h3ll0
